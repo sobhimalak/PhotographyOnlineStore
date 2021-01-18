@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotographyOnlineStore.Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotographyOnlineStore.WebUI", "PhotographyOnlineStore.WebUI\PhotographyOnlineStore.WebUI.csproj", "{656CAFA3-CFD4-4EFB-A9D7-6BCFE563F303}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotographyOnlineStore.DataAccess.InMemory", "PhotographyOnlineStore.DataAccess.InMemory\PhotographyOnlineStore.DataAccess.InMemory.csproj", "{BD5D1889-D927-4BF1-9929-B135AAB7A846}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{656CAFA3-CFD4-4EFB-A9D7-6BCFE563F303}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{656CAFA3-CFD4-4EFB-A9D7-6BCFE563F303}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{656CAFA3-CFD4-4EFB-A9D7-6BCFE563F303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5D1889-D927-4BF1-9929-B135AAB7A846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5D1889-D927-4BF1-9929-B135AAB7A846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5D1889-D927-4BF1-9929-B135AAB7A846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5D1889-D927-4BF1-9929-B135AAB7A846}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
