@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using PhotoographyOnlineStore.Models;
+using PhotographyOnlineStore.Models;
 
-namespace PhotoographyOnlineStore.Controllers
+namespace PhotographyOnlineStore.Controllers
 {
     [Authorize]
     public class AccountController : Controller

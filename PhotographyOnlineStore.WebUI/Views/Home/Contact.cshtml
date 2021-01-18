@@ -1,17 +1,95 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
+﻿@{ ViewBag.Title = "About Us"; }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="~/Scripts/JavaScriptPhotography.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!-- Hero section -->
+<section id="hero">
+    <div class="row">
+        <div class="col-sm-12" id="search">
+            <form>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control search-from" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary btn-lg text-white" type="button">Search</button>
+                        <button class="btn btn-secondary btn-lg text-white hide-search" type="button"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="hero-heading">
+        <h1>We like to create awesome designs.</h1>
+        <p>Sunlimetech is an advanced and proactive at the app development and providing you all the ultimate software development services that you need. Sunlimetech ensure to offer you all the required & ultimate services meeting the advanced deadlines and requirements of the field. We believe in providing the ultimate services with quality and meeting all the deadlines, application development industry is at its peak and hitting the new dimensions rapidly.</p>
+    </div>
+    <div class="row mgmt-links-wrapper">
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <a href="https://www.fiverr.com/share/qb8D02" target="_blank">
+                <div class="link-box">
+                    <i class="fa fa-heart"></i>
+                    <p>Visual Design</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <a href="https://www.fiverr.com/share/qb8D02" target="_blank">
+                <div class="link-box">
+                    <i class="fa fa-wrench"></i>
+                    <p>Development</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <a href="https://www.fiverr.com/share/qb8D02" target="_blank">
+                <div class="link-box">
+                    <i class="fa fa-users"></i>
+                    <p>Management</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <a href="https://www.fiverr.com/share/qb8D02" target="_blank">
+                <div class="link-box">
+                    <i class="fa fa-share-alt"></i>
+                    <p>Marketing</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <a href="https://www.fiverr.com/share/qb8D02" target="_blank">
+                <div class="link-box">
+                    <i class="fa fa-cart-plus"></i>
+                    <p>eCommerce</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <a href="https://www.fiverr.com/share/qb8D02" target="_blank">
+                <div class="link-box">
+                    <i class="fa fa-eye"></i>
+                    <p>Branding</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- ./Hero section -->
+<!-- thank you Modal -->
+<div class="modal fade text-center py-5" style="top:30px" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" class="modal-img">
+                <h3 class="pt-5 mb-0 text-secondary">Thanks for your love and support!</h3>
+                <p class="pb-3 text-muted"><small>Hope that you enjoy Our site! Check also our Design Studio</small></p>
+                <a role="button" id="modal-btn" class="btn btn-secondary text-white mb-3" href="https://cloudulu.com" target="_blank">www.cloudulu.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./thank you Modal -->

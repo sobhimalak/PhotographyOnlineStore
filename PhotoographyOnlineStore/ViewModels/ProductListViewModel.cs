@@ -4,7 +4,8 @@ using System.Linq;
 using System.Web;
 
 
-namespace PhotoographyOnlineStore.ViewModels
+
+namespace PhotographyOnlineStore.ViewModels
 {
     public class ProductListViewModel
     {
