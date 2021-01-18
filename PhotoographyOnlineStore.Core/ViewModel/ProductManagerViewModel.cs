@@ -1,13 +1,16 @@
-﻿using System;
+﻿using PhotographyOnlineStore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace PhotoographyOnlineStore.ViewModels
+namespace PhotoographyOnlineStore.Core.ViewModel
 {
     public class ProductManagerViewModel
     {
         public Product Product { get; set; }
         public IEnumerable<ProductCategory> ProductCategories { get; set; }
+
     }
 }
