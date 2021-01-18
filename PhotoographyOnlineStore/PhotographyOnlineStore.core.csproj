@@ -167,12 +167,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="Contracts\IShoppingCartService.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\ShoppingCartItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BasketItemViewModel.cs" />
     <Compile Include="ViewModels\BasketSummaryViewModel.cs" />
@@ -180,14 +185,6 @@
     <Compile Include="ViewModels\ProductManagerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PhotographyOnlineStore.DataAccess.SQL\PhotographyOnlineStore.DataAccess.SQL.csproj">
-      <Project>{7133dea7-35b4-4acc-a030-46efd20615e2}</Project>
-      <Name>PhotographyOnlineStore.DataAccess.SQL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PhotographyOnlineStore.Services\PhotographyOnlineStore.Services.csproj">
-      <Project>{7805887d-b8cb-48b8-8edc-b05d6db7461c}</Project>
-      <Name>PhotographyOnlineStore.Services</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PhotographyOnlineStore.WebUI\PhotographyOnlineStore.WebUI.csproj">
       <Project>{656cafa3-cfd4-4efb-a9d7-6bcfe563f303}</Project>
       <Name>PhotographyOnlineStore.WebUI</Name>
