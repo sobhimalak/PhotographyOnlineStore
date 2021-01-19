@@ -12,7 +12,7 @@ namespace PhotographyOnlineStore.Models
     {
         [StringLength(20)]//test
         [DisplayName("Product Name")]
-        public String Name { get; set; }
+        public String Name { get; set; }//test
         public String Description { get; set; }
         [Range(0, 1000)]
         public Decimal Price { get; set; }
