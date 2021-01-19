@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Runtime.Caching;
+using PhotographyOnlineStore.Core.Models;
+using PhotographyOnlineStore.Core.Contracts;
 
 namespace PhotographyOnlineStore.DataAccess.InMemory
 {
@@ -20,24 +22,27 @@ namespace PhotographyOnlineStore.DataAccess.InMemory
                 items = new List<T>();
             }
         }
-        public void commit()
+
+        public void Commit()
         {
             cache[className] = items;
         }
-        public void insert(T t)
+        public void Insert(T t)
         {
             items.Add(t);
         }
         public void Update(T t)
         {
-            T tToupdate = items.Find(i => i.Id == t.Id);
-            if (tToupdate != null)
+            /*  Comment out the below line for testing purpose - use FirstOrDefault instead of Find */
+            //            Product productToUpdate = products.Find(p => p.Id == t.Id);
+            T tToUpdate = items.Find(i => i.Id == t.Id);
+            if (tToUpdate != null)
             {
-                tToupdate = t;
+                tToUpdate = t;
             }
             else
             {
-                throw new Exception(className + "Not Found");
+                throw new Exception(className + " not found!!!");
             }
         }
         public T Find(string Id)
@@ -49,9 +54,8 @@ namespace PhotographyOnlineStore.DataAccess.InMemory
             }
             else
             {
-                throw new Exception(className + "Not Found");
+                throw new Exception(className + " not found!!!");
             }
-
         }
         public IQueryable<T> Collection()
         {
@@ -59,15 +63,16 @@ namespace PhotographyOnlineStore.DataAccess.InMemory
         }
         public void Delete(string Id)
         {
-            T tDelete = items.Find(i => i.Id == Id);
-            if (tDelete != null)
+            T tToDelete = items.Find(p => p.Id == Id);
+            if (tToDelete != null)
             {
-                items.Remove(tDelete);
+                items.Remove(tToDelete);
             }
             else
             {
-                throw new Exception(className + "Not Found");
+                throw new Exception(className + " not found!!!");
             }
         }
     }
+
 }

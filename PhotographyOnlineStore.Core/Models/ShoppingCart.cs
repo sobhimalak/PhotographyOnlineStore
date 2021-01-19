@@ -1,15 +1,16 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PhotoographyOnlineStore.Models
+namespace PhotographyOnlineStore.Core.Models
 {
-    public class Basket : BaseEntity
+    public class ShoppingCart : BaseEntity
     {
         public virtual ICollection<ShoppingCartItem> ShoppingCartItems { get; set; }
 
-        public ShoppingCartItem()
+        public ShoppingCart()
         {
             this.ShoppingCartItems = new List<ShoppingCartItem>();
         }

@@ -1,9 +1,10 @@
-﻿using System;
+﻿using PhotographyOnlineStore.Core.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PhotoographyOnlineStore.Contracts
+namespace PhotographyOnlineStore.Core.Contracts
 {
     public interface IRepository<T> where T : BaseEntity
     {

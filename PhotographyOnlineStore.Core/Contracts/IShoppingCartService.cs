@@ -1,10 +1,9 @@
-﻿using System;
+﻿
+using PhotographyOnlineStore.Core.ViewModels;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace PhotoographyOnlineStore.Contracts
+namespace PhotographyOnlineStore.Core.Contracts
 {
     public interface IShoppingCartService
     {

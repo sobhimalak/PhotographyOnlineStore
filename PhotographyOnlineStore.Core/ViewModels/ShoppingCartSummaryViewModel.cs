@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PhotoographyOnlineStore.ViewModels
+namespace PhotographyOnlineStore.Core.ViewModels
 {
     public class ShoppingCartSummaryViewModel
     {
         public int ShoppingCartCount { get; set; }
         public decimal ShoppingCartTotal { get; set; }
 
-        public ShoppingCarttSummaryViewModel()
+        public ShoppingCartSummaryViewModel()
         {
 
         }

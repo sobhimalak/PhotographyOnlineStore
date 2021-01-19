@@ -1,5 +1,7 @@
-﻿using System.Linq;
-using PhotographyOnlineStore.core.Contract;
+﻿using System.Data.Entity;
+using System.Linq;
+using PhotographyOnlineStore.Core.Contracts;
+using PhotographyOnlineStore.Core.Models;
 
 namespace PhotographyOnlineStore.DataAccess.SQL
 {

@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PhotographyOnlineStore.core.Models;
+using PhotographyOnlineStore.Core.Models;
 
 namespace PhotographyOnlineStore.DataAccess.SQL
 {
