@@ -5,7 +5,7 @@ using System.Web;
 
 namespace PhotoographyOnlineStore.ViewModels
 {
-    public class BasketItemViewModel
+    public class ShoppingCartItemViewModel
     {
         public string Id { get; set; }
 
