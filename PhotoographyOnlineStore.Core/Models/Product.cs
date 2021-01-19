@@ -10,7 +10,7 @@ namespace PhotographyOnlineStore.Models
 {
     public class Product : BaseEntity
     {
-        [StringLength(20)]
+        [StringLength(20)]//test
         [DisplayName("Product Name")]
         public String Name { get; set; }
         public String Description { get; set; }
