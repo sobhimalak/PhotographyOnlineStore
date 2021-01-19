@@ -15,7 +15,7 @@ namespace PhotographyOnlineStore.Models
         public String Name { get; set; }//test
         public String Description { get; set; }//test
         [Range(0, 1000)]
-        public Decimal Price { get; set; }
+        public Decimal Price { get; set; }//test
         public String Category { get; set; }
         public String Image { get; set; }
     }
